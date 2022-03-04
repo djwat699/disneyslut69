@@ -81,5 +81,10 @@ namespace Something
         {
 
         }
+
+        private void good_RatingsLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -170,6 +170,7 @@
             good_RatingsLabel.Size = new System.Drawing.Size(75, 13);
             good_RatingsLabel.TabIndex = 29;
             good_RatingsLabel.Text = "Good Ratings:";
+            good_RatingsLabel.Click += new System.EventHandler(this.good_RatingsLabel_Click);
             // 
             // family_FriendlyLabel
             // 
@@ -580,7 +581,7 @@
             this.Controls.Add(this.disney_AttractionsDataGridView);
             this.Controls.Add(this.disney_AttractionsBindingNavigator);
             this.Name = "Form1";
-            this.Text = "disney ";
+            this.Text = "Disney Attractions";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disney_AttractionsBindingSource)).EndInit();
