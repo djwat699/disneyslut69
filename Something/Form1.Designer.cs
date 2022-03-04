@@ -580,7 +580,7 @@
             this.Controls.Add(this.disney_AttractionsDataGridView);
             this.Controls.Add(this.disney_AttractionsBindingNavigator);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "disney ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disney_AttractionsBindingSource)).EndInit();
