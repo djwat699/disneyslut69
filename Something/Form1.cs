@@ -60,7 +60,7 @@ namespace Something
                     foreach (Database4DataSet.Disney_AttractionsRow item in contactDetails)
                     {
                         textBox1.Text += item.Description + "/"; 
-                        costComboBox.Text +=  item.Cost + "/";
+                       // costComboBox.Text +=  item.Cost + "/";
                     }
                 }
 
@@ -83,6 +83,11 @@ namespace Something
         }
 
         private void good_RatingsLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void costComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

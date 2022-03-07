@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label pictureLabel;
             System.Windows.Forms.Label costLabel;
             System.Windows.Forms.Label descriptionLabel;
             System.Windows.Forms.Label disney_WorldLabel;
@@ -73,7 +72,6 @@
             this.descriptionComboBox = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.pictureTextBox = new System.Windows.Forms.TextBox();
             this.disney_WorldCheckBox = new System.Windows.Forms.CheckBox();
             this.disney_LandCheckBox = new System.Windows.Forms.CheckBox();
             this.within_a_100_milesCheckBox = new System.Windows.Forms.CheckBox();
@@ -82,7 +80,6 @@
             this.family_FriendlyCheckBox = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            pictureLabel = new System.Windows.Forms.Label();
             costLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             disney_WorldLabel = new System.Windows.Forms.Label();
@@ -98,15 +95,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.disney_AttractionsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureLabel
-            // 
-            pictureLabel.AutoSize = true;
-            pictureLabel.Location = new System.Drawing.Point(36, 415);
-            pictureLabel.Name = "pictureLabel";
-            pictureLabel.Size = new System.Drawing.Size(43, 13);
-            pictureLabel.TabIndex = 41;
-            pictureLabel.Text = "Picture:";
             // 
             // costLabel
             // 
@@ -410,7 +398,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(270, 446);
+            this.textBox1.Location = new System.Drawing.Point(67, 433);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(177, 137);
@@ -433,6 +421,7 @@
             this.costComboBox.Name = "costComboBox";
             this.costComboBox.Size = new System.Drawing.Size(69, 21);
             this.costComboBox.TabIndex = 49;
+            this.costComboBox.SelectedIndexChanged += new System.EventHandler(this.costComboBox_SelectedIndexChanged);
             // 
             // descriptionComboBox
             // 
@@ -461,15 +450,6 @@
             this.DeleteButton.TabIndex = 44;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
-            // 
-            // pictureTextBox
-            // 
-            this.pictureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.disney_AttractionsBindingSource, "Picture", true));
-            this.pictureTextBox.Location = new System.Drawing.Point(123, 422);
-            this.pictureTextBox.Multiline = true;
-            this.pictureTextBox.Name = "pictureTextBox";
-            this.pictureTextBox.Size = new System.Drawing.Size(104, 161);
-            this.pictureTextBox.TabIndex = 42;
             // 
             // disney_WorldCheckBox
             // 
@@ -533,7 +513,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(123, 589);
+            this.button1.Location = new System.Drawing.Point(0, 589);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 50;
@@ -542,7 +522,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(372, 589);
+            this.button2.Location = new System.Drawing.Point(228, 589);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 51;
@@ -560,8 +540,6 @@
             this.Controls.Add(this.descriptionComboBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DeleteButton);
-            this.Controls.Add(pictureLabel);
-            this.Controls.Add(this.pictureTextBox);
             this.Controls.Add(costLabel);
             this.Controls.Add(descriptionLabel);
             this.Controls.Add(disney_WorldLabel);
@@ -631,7 +609,6 @@
         private System.Windows.Forms.ComboBox descriptionComboBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.TextBox pictureTextBox;
         private System.Windows.Forms.CheckBox disney_WorldCheckBox;
         private System.Windows.Forms.CheckBox disney_LandCheckBox;
         private System.Windows.Forms.CheckBox within_a_100_milesCheckBox;
